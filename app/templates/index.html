@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+hello {{user['name']}}!
+{% for post in posts %}
+<p>{{post['author']}} say <b>{{post['body']}}</b></p>
+{% endfor %}
+{% endblock %}
